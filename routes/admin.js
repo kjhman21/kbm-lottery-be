@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const { DB } = require('../models');
+const Caver = require('caver-js');
 const mintStatusEnum = require('../common/mint_status_enum');
 const { checkDefined, validateTimestamp } = require('../utils/common');
 
