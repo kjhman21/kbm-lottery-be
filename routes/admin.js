@@ -19,7 +19,7 @@ router.post('/uuid', async (req, res) => {
             'message',
         ])
 
-        if(message !== "uuid") {
+        if(message !== "create_uuid") {
             throw "wrong message"
         }
         
