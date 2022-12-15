@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 const { DB } = require('../models');
 const mintStatusEnum = require('../common/mint_status_enum');
-const { checkDefined } = require('../utils/common');
+const { checkDefined, validateTimestamp } = require('../utils/common');
 
 router.post('/uuid', async (req, res) => {
     try {
