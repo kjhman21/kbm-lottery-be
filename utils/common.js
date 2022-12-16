@@ -4,7 +4,7 @@ function validateTimestamp(timestamp) {
         throw "required: timestamp";
     }
 
-    var d = new Date(parseInt(timestamp));
+    var d = new Date(parseInt(timestamp - timestamp%1000));
     var now = new Date();
 
     if(d > now) {

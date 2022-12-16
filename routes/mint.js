@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
         }
         
         if(!validateTimestamp(timestamp)) {
-            throw "timestampe valid"
+            throw "timestamp invalid"
         }
 
         message += timestamp;
